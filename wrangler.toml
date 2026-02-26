@@ -1,0 +1,18 @@
+name = "dividend-alerts-telegram-bot"
+main = "src/index.js"
+compatibility_date = "2026-02-23"
+
+d1_databases = [
+  { binding = "DB", database_name = "dashboard-db", database_id = "bd30561e-5dc1-42fd-a24a-083765c50598" }
+]
+
+workers_dev = true
+
+[vars]
+YUBICO_CLIENT_ID = "117884"
+
+[triggers]
+crons = ["25 13 * * *"]
+
+[observability.logs]
+enabled = true
